@@ -2,6 +2,7 @@ import React from 'react'
 import {useState} from 'react'
 import './header.css'
 import Modal from './Modal'
+import Me from '../../images/me.png'
 
 const header = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -26,7 +27,12 @@ const header = () => {
           <button href="#contact" className='btn btn-primary'>Let's Talk</button>
         </div>
         {modalIsOpen && <Modal onCancel ={closeModalHandler} onConfirm={closeModalHandler}/>}
+      
+        <div className='me'>
+          <img src={Me} alt="me" />
+        </div>
       </div>
+      
     </header>
   )
 }

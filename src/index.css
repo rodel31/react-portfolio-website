@@ -88,6 +88,7 @@ a:hover{
 }
 
 .btn{
+    background-color: transparent;
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
@@ -119,7 +120,7 @@ img{
 .backdrop{
     position: fixed;
     z-index: 1;
-   
+    background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
     height: 100vh;
     top: 0;
@@ -141,7 +142,7 @@ img{
 }
 
 /*======Media Queries(Medium Devices)========*/
-@media screen and (max-width:1600px){
+@media screen and (max-width:1024px){
     .container{
         width: var(--container-width-md);
     }
