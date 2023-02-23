@@ -21,20 +21,20 @@ const header = () => {
 
   return (
     <header id='home'>
-      <div className="container header_container">
-        <h5>Hello I'm</h5>
-        <h1>Rodel Ramos</h1>
-        <h5 className='text-light'>Software Developer</h5>
-        <div className='cta'>
-          <button className='btn' onClick={downloadResume}><FiDownload/><span> Resume</span></button>
-          <button href="#contact" className='btn btn-primary'><FiPhoneCall/><span>  Let's Talk</span></button>
-        </div>
-        {modalIsOpen && <Modal onCancel ={closeModalHandler} onConfirm={closeModalHandler}/>}
-      
-        <div className='me'>
-          <img src={Me} alt="me" />
-        </div>
-      </div>
+		<div className="container">
+			<h5>Hello I'm</h5>
+			<h1>Rodel Ramos</h1>
+			<h2 className='text-light'>Software Engineer</h2>
+			<div className='cta'>
+			<button className='btn' onClick={downloadResume}><FiDownload/><span> Resume</span></button>
+			<button href="#contact" className='btn btn-primary'><FiPhoneCall/><span>  Let's Talk</span></button>
+			</div>
+			{modalIsOpen && <Modal onCancel ={closeModalHandler} onConfirm={closeModalHandler}/>}
+		
+			<div className='me'>
+			<img src={Me} alt="me" />
+			</div>
+		</div>
       
     </header>
   )

@@ -1,0 +1,11 @@
+#about{
+    height: 100vh;
+    padding-top: 6rem;
+    overflow: hidden;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
